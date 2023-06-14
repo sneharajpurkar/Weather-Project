@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Merriweather', serif;
 }
-#main-div{
+
+#main-div {
     /* border: 1px solid red; */
     width: 100%;
     height: 100vh;
@@ -12,8 +13,9 @@
     align-items: center;
     background-color: #87aaf1;
 }
-#box{
-    width: 20%;
+
+#box {
+    width: 25%;
     height: 60vh;
     /* border: 2px solid black; */
     border-radius: 15px;
@@ -21,65 +23,110 @@
     flex-direction: column;
     align-items: center;
     background-color: #3c46e7;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
-.inputData{
+
+#box:hover {
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.inputData {
     margin-top: 45px;
     width: 80%;
     display: flex;
 }
-.inputField{
-    height: 4.5vh;
+
+.inputField {
+    height: 5vh;
     width: 100%;
     border-radius: 2vh;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 600;
     color: black;
     padding-left: 15px;
 }
-.inputData>button{
+
+.inputData>button {
     border: none;
 }
-.logo{
+
+.logo {
     margin-left: 10px;
     font-size: 15px;
     border: none;
     background-color: white;
-    height: 4.4vh;
+    height: 5vh;
     width: 5.4vh;
     align-items: center;
     text-align: center;
     border-radius: 1.8vh;
 }
-.fa-solid{
+
+.fa-solid {
     margin-top: 4px;
-    color: gray;
+    color: rgb(78, 77, 77);
 }
-.error{
+
+.error {
     margin-top: 15px;
-    color: white;
-    font-size: 13px;
+    color: wheat;
+    font-size: 15px;
 }
-.info{
-    margin-top: 40px;
+
+.info {
+    margin-top: 35px;
     color: white;
 }
-.info>img{
+
+.info>img {
     width: 90%;
     height: 26%;
     border-radius: 10px;
 }
-.info>h2{
+
+.info>h2 {
     text-align: center;
     margin-top: 20px;
 }
-.info>h1{
+
+.info>h1 {
     text-align: center;
 }
-.info2{
+
+.info2 {
     color: white;
     margin-top: -70px;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #main-div {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #87aaf1;
+    }
+    #box {
+        width: 80%;
+        height: 70vh;
+        /* border: 2px solid black; */
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #3c46e7;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    }
 }

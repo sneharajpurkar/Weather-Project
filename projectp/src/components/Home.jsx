@@ -87,7 +87,7 @@ const Home = () => {
                     <div className='inputData'>
                         <input type='search'
                             className='inputField'
-                            placeholder='Enter your city name'
+                            placeholder='Enter your city name...'
                             onChange={e => setname(e.target.value)}
                             value={name} />
                         <button className='logo' onClick={handleClick}><i class="fa-solid fa-magnifying-glass"></i></button>
